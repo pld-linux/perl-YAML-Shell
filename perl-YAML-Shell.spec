@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	YAML
 %define	pnam	Shell
 Summary:	YAML::Shell - The YAML Test Shell
