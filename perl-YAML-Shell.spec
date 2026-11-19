@@ -7,13 +7,13 @@
 Summary:	YAML::Shell - The YAML Test Shell
 #Summary(pl.UTF-8):	
 Name:		perl-YAML-Shell
-Version:	0.60
+Version:	0.71
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/YAML/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e418f37ac4ab1e77f08bc3b6b6810a03
+Source0:	https://www.cpan.org/modules/by-module/YAML/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	e2c519385669f1e34ff6c57aab147fae
 URL:		http://search.cpan.org/dist/YAML-Shell/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -54,4 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %attr(755,root,root) %{_bindir}/*
 %{perl_vendorlib}/YAML/*.pm
+%{perl_vendorlib}/YAML/*.pod
 %{_mandir}/man?/*
